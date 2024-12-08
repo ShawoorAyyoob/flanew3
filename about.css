@@ -1,0 +1,151 @@
+/* General Styles */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .h2{
+    color: #ffffff;
+  }
+  h2 {
+    font-size: 2.8rem;
+    text-align: center;
+    color: #ff9800;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #f1a60f;
+    margin: 10px auto 0;
+  }
+  p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #555;
+  }
+  
+  /* About Us Section */
+  .about-us {
+    background: radial-gradient(circle, #ff9800, #ffc107);
+    padding: 60px 20px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 60px;
+  }
+  .about-us .highlight {
+    color: #ffeb3b;
+    font-weight: bold;
+  }
+  
+  /* Meet Our Director Section */
+  .meet-director {
+    padding: 40px 20px;
+    background: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Directors Section */
+  .director-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .director-profile {
+    background: linear-gradient(to top, #ffffff, #f5f5f5);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .director-profile:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  .director-profile img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+    border: 3px solid #ff9800;
+  }
+  .director-profile h3 {
+    font-size: 1.5rem;
+    color: #ff9800;
+    margin-bottom: 10px;
+  }
+  
+  /* Faculty Section */
+  .faculty {
+    padding: 60px 20px;
+    background: #f5f5f5;
+  }
+  .faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .faculty-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .faculty-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  .faculty-card img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .faculty-card h3 {
+    font-size: 1.4rem;
+    color: #ff9800;
+    margin-bottom: 10px;
+  }
+  .director-grid, .faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.director-profile, .faculty-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.director-profile:hover, .faculty-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.director-profile img, .faculty-card img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+}
